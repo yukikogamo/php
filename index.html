@@ -1,0 +1,16 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ユーザ登録</title>
+  <h1>作成</h1>
+</head>
+<body>
+  <form action="index.php" method="post">
+    <input type="hidden" name="action" value="index">
+    <p>メールアドレス：<input type="text" name="mail" value = "<?php if( !empty($_POST['mail']) ){ echo $_POST['mail']; } ?>"></p>
+    <p>パスワード：<input type="password" name="password"></p>
+    <p><input type="submit" name="submitBtn" value="送信"></p>
+    <a href="list.php">一覧へ</a>
+  </form>
+</body>
+</html>
